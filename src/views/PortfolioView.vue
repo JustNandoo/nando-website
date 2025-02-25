@@ -26,7 +26,7 @@ export default {
           id: 3,
           name: 'ELCAS Mobile',
           imageUrl: 'elcas_mockup.png',
-          status: 'This is an application that I worked on during my PKL. Elcas is an application that integrates Maritime Surveillance System (Long-Range Camera, Radar, and AIS Integration).',
+          status: 'This is an application that I worked on during my Internship. Elcas is an application that integrates Maritime Surveillance System (Long-Range Camera, Radar, and AIS Integration).',
           tech: 'Flutter, Go Lang',
           github: 'null',
           demo: 'null'
@@ -48,10 +48,11 @@ export default {
   <div class="px-5 py-5 md:px-12 md:py-10 text-left text-amber-50 mx-3">
     <article data-page="about">
       <header>
-        <div class="text-2xl font-bold text-white mb-10 title-section flex items-center justify-center flex-col">
+        <div class="text-2xl font-bold text-white mb-10 title-section flex flex-col items-center justify-center">
           <h4>Past Project Experience</h4>
-          <h4 class="text-base font-normal text-transparent bg-clip-text bg-gradient-to-r from-slate-100 to-amber-300">
-            Explore the projects I've worked on so far</h4>
+          <h4 class="text-base font-normal text-transparent bg-clip-text bg-gradient-to-r from-slate-100 to-amber-300 text-center max-w-lg">
+            Explore the projects I've worked on so far
+          </h4>
         </div>
       </header>
       <section>
@@ -64,8 +65,8 @@ export default {
                 </div>
                 <div class="w-full flex flex-col gap-2 items-center text-sm">
                   <div class="title-text font-medium text-secondary">{{ item.name }}</div>
-                  <div class="w-full text-left text-xs text-[#c1c1c1]">{{ item.status }}</div>
-                  <div class="w-full mt-4 text-sm text-left text-amber-200">{{ item.tech }}</div>
+                  <div class="w-full text-center text-xs text-[#c1c1c1]">{{ item.status }}</div>
+                  <div class="w-full mt-4 text-sm text-center text-amber-200">{{ item.tech }}</div>
                   <div class="w-full flex justify-end">
                     <a v-if="item.github !== 'null'" :href="item.github" target="_blank" title="View Github Repository">
                       <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="16" width="16">
@@ -82,6 +83,7 @@ export default {
     </article>
   </div>
 </template>
+
 
 
 
