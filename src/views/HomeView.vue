@@ -31,7 +31,6 @@
            src="../images/nando-formal.jpg">
     </div>
 
-
   </main>
 </template>
 
