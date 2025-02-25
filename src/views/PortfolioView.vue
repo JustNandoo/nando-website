@@ -8,7 +8,7 @@ export default {
           id: 1,
           name: 'NeaRuS',
           imageUrl: 'nearus.png',
-          status: 'My personal website, I created this website to display my profile, skills and projects. As well as my place to try new technology.',
+          status: 'This is a boarding house booking website, I made this website with 3 of my friends. My job desk for this website is front end and project manager.',
           tech: 'VueJS 3, Laravel, Tailwind',
           github: 'https://github.com/JustNandoo/nearus-project',
           demo: 'null'
@@ -17,7 +17,7 @@ export default {
           id: 2,
           name: 'Courtura',
           imageUrl: 'klambi_mockup.png',
-          status: 'A website that has a responsive display to make it easier for Muslims to read the Quran from anywhere.',
+          status: 'This is an online shop application, I made this as an end of semester assignment at school.',
           tech: 'Flutter',
           github: 'https://github.com/JustNandoo/PAS_Ecommerce',
           demo: 'null'
@@ -26,7 +26,7 @@ export default {
           id: 3,
           name: 'ELCAS Mobile',
           imageUrl: 'elcas_mockup.png',
-          status: 'Sistem Informasi dan Teknologi Desa, a web application to assist village government work in administration, population data management, community services, etc.',
+          status: 'This is an application that I worked on during my PKL. Elcas is an application that integrates Maritime Surveillance System (Long-Range Camera, Radar, and AIS Integration).',
           tech: 'Flutter, Go Lang',
           github: 'null',
           demo: 'null'
