@@ -24,7 +24,6 @@
         </svg>
         Download CV
       </a>
-
     </div>
     <div class="flex justify-center md:justify-start fadein-right">
       <img alt="avatar" fetchpriority="high" width="550" height="550" decoding="async" data-nimg="1"
