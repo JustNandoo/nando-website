@@ -1,8 +1,7 @@
 <template>
   <div class="max-w-7xl mx-auto flex flex-col relative">
-
     <!-- Navbar -->
-    <nav class="max-w-7xl px-5 md:fixed top-0 z-[98] w-screen h-[80px] backdrop-blur-md bg-[#121212] bg-opacity-80 flex items-center">
+    <nav class="max-w-7xl px-5 md:fixed top-0 z-[98] w-screen h-[80px] backdrop-blur-md bg-[#121212] bg-opacity-80 flex items-center border-b border-[#383838]">
       <div class="container mx-auto flex flex-wrap items-center justify-between">
         <button @click="redirectToHome" class="flex">
           <img :src="require('@/images/logo_nando.png')" alt="Logo Nando" class="w-32 h-32 object-contain">
@@ -19,15 +18,15 @@
           </a>
         </div>
         <div class="hidden md:flex justify-between items-center w-full md:w-auto md:order-1">
-          <ul class="flex-col md:flex-row flex md:space-x-8 mt-4 md:mt-0 md:text-sm md:font-medium">
+          <ul class="flex md:flex-row space-x-8 mt-4 md:mt-0 md:text-sm md:font-medium">
             <li>
-              <router-link to="/" class="nav-link">Home</router-link>
+              <router-link to="/" exact-active-class="active-link" class="nav-link">Home</router-link>
             </li>
             <li>
-              <router-link to="/about" class="nav-link">About</router-link>
+              <router-link to="/about" exact-active-class="active-link" class="nav-link">About</router-link>
             </li>
             <li>
-              <router-link to="/portfolio" class="nav-link">Portfolio</router-link>
+              <router-link to="/portfolio" exact-active-class="active-link" class="nav-link">Portfolio</router-link>
             </li>
           </ul>
         </div>
@@ -44,9 +43,9 @@
   <!-- Footer -->
   <footer class="block md:hidden fixed bottom-0 left-0 right-0 rounded-t-3xl border border-[#383838] bg-[#121212] bg-opacity-80 backdrop-blur-md backdrop-opacity-90">
     <nav class="flex justify-around py-4 text-xs">
-      <router-link to="/" class="text-gray-300 hover:text-white">Home</router-link>
-      <router-link to="/about" class="text-gray-300 hover:text-white">About</router-link>
-      <router-link to="/portfolio" class="text-gray-300 hover:text-white">Portfolio</router-link>
+      <router-link to="/" exact-active-class="active-link" class="text-gray-300 hover:text-white">Home</router-link>
+      <router-link to="/about" exact-active-class="active-link" class="text-gray-300 hover:text-white">About</router-link>
+      <router-link to="/portfolio" exact-active-class="active-link" class="text-gray-300 hover:text-white">Portfolio</router-link>
     </nav>
   </footer>
 </template>
@@ -72,6 +71,27 @@ body {
   color: #2c3e50;
   height: 100vh;
   padding-top: 80px; /* Mencegah navbar menutupi konten */
+}
+
+/* Styling untuk Navbar */
+.nav-link {
+  position: relative;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  padding-bottom: 5px;
+}
+
+/* Garis bawah yang berpindah-pindah */
+.active-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 3px;
+  background: #ffdb70;
+  transition: all 0.3s ease-in-out;
 }
 
 /* Scrollbar kuning tetap ada */
